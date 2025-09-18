@@ -1,69 +1,93 @@
-# React + TypeScript + Vite
+# 🏐 VoleyPro - Plataforma de Gestión Deportiva
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una plataforma web moderna para la gestión de clubes y academias de vóley, desarrollada con React, TypeScript y TailwindCSS.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Diseño moderno y responsive** con TailwindCSS
+- 🔐 **Sistema de autenticación** para profesores y jugadores
+- 📊 **Gestión de torneos** y competencias
+- 💰 **Control de pagos** y cuotas
+- 🔔 **Sistema de notificaciones**
+- 🏗️ **Arquitectura modular** y escalable
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 19 + TypeScript
+- **Estilos**: TailwindCSS 3.x
+- **Build Tool**: Vite
+- **Fuentes**: Google Fonts (Poppins, Montserrat)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎨 Paleta de Colores
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Rojo oscuro**: `#73020C`
+- **Azul oscuro**: `#020F59` 
+- **Azul medio**: `#03258C`
+- **Azul vibrante**: `#044BD9`
+- **Rojo brillante**: `#F20505`
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Instalación y Uso
+
+1. **Clonar el repositorio**:
+```bash
+git clone https://github.com/NazaCastt/ProyectoVoley.git
+cd ProyectoVoley
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Instalar dependencias**:
+```bash
+npm install
 ```
+
+3. **Ejecutar en modo desarrollo**:
+```bash
+npm run dev
+```
+
+4. **Construir para producción**:
+```bash
+npm run build
+```
+
+## 🔐 Credenciales de Prueba
+
+- **Profesor**: `profesor` / `1234`
+- **Jugador**: `jugador` / `1234`
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── components/          # Componentes UI reutilizables
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── InfoSection.tsx
+│   ├── Footer.tsx
+│   └── LoginModal.tsx
+├── features/           # Módulos funcionales
+│   ├── auth/
+│   ├── pagos/
+│   ├── jugadores/
+│   └── notificaciones/
+├── app/               # Configuración global
+│   ├── routes/
+│   ├── store/
+│   └── providers/
+└── utils/             # Utilidades compartidas
+```
+
+## 👥 Contribución
+
+1. Fork el proyecto
+2. Crea tu rama de feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+**Desarrollado con ❤️ para la comunidad deportiva**
